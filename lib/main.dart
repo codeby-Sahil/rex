@@ -1,26 +1,23 @@
+import 'package:dio_get/core/global/initial_bindings.dart';
+import 'package:dio_get/core/router/router.dart';
+import 'package:dio_get/core/router/routes.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-
-import 'app/bindings/universal_binding.dart';
-import 'app/routes/app_pages.dart';
-import 'app/theme/app_theme.dart';
+import 'package:get/get_navigation/src/root/get_material_app.dart';
 
 void main() {
-  runApp(const VexApp());
+  runApp(MealsDB());
 }
 
-class VexApp extends StatelessWidget {
-  const VexApp({super.key});
+class MealsDB extends StatelessWidget {
+  const MealsDB({super.key});
 
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: 'Vex',
       debugShowCheckedModeBanner: false,
-      theme: AppTheme.theme,
-      initialBinding: UniversalBinding(),
-      initialRoute: AppPages.initial,
-      getPages: AppPages.routes,
+      initialRoute: Routes.homeScreen,
+      initialBinding: InitialBindings(),
+      getPages: GetRoutes.routes,
     );
   }
 }
