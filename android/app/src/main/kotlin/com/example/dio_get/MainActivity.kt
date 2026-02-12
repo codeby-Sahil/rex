@@ -1,4 +1,4 @@
-package com.example.dio_get
+package com.example.prosnap
 
 import io.flutter.embedding.android.FlutterActivity
 

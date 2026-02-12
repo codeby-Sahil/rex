@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:dio_get/core/services/tokens.dart';
+import 'package:prosnap/core/services/tokens.dart';
 
 class AuthInterceptor extends Interceptor {
   @override

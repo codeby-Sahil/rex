@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:dio_get/core/network/auth_interceptor.dart';
+import 'package:prosnap/core/network/auth_interceptor.dart';
 import 'error_interceptor.dart';
 
 class ApiClient {
