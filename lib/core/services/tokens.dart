@@ -17,7 +17,7 @@ class Tokens {
     return _refreshToken;
   }
 
-  static save({
+  static Future<void> save({
     required String accessToken,
     required String refreshToken,
   }) async {
